@@ -1,0 +1,26 @@
+2025-03-08 18:43:31,801 - ERROR - Error loading data: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Processed_Data\\Pores_100\\Similarity\\Sample1.csv'
+2025-03-08 18:43:31,801 - ERROR - Analysis pipeline failed: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Processed_Data\\Pores_100\\Similarity\\Sample1.csv'
+2025-03-08 18:43:51,827 - ERROR - Error loading data: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Processed_Data\\Pores_10\\Similarity\\Sample1.csv'
+2025-03-08 18:43:51,827 - ERROR - Analysis pipeline failed: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Processed_Data\\Pores_10\\Similarity\\Sample1.csv'
+2025-03-08 18:45:04,826 - ERROR - Error loading data: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Segmented_Data/Machine/Processed_Data\\Pores_10\\Similarity\\XCT-1.csv'
+2025-03-08 18:45:04,826 - ERROR - Analysis pipeline failed: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Segmented_Data/Machine/Processed_Data\\Pores_10\\Similarity\\XCT-1.csv'
+2025-03-08 18:46:56,167 - ERROR - Error loading data: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Processed_Data\\Pores_10\\Similarity\\XCT-1.csv'
+2025-03-08 18:46:56,167 - ERROR - Analysis pipeline failed: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Processed_Data\\Pores_10\\Similarity\\XCT-1.csv'
+2025-03-08 18:51:23,201 - ERROR - Error loading data: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Processed_Data/Pores_10/Similarity\\XCT-1.csv'
+2025-03-08 18:51:23,201 - ERROR - Analysis pipeline failed: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Processed_Data/Pores_10/Similarity\\XCT-1.csv'
+2025-03-08 18:55:04,817 - ERROR - Error loading data: name 'sample' is not defined
+2025-03-08 18:55:04,818 - ERROR - Analysis pipeline failed: name 'sample' is not defined
+2025-03-08 18:55:30,948 - ERROR - Error loading data: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Processed_Data/Pores_10/Similarity/XCT-1.csv'
+2025-03-08 18:55:30,948 - ERROR - Analysis pipeline failed: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Processed_Data/Pores_10/Similarity/XCT-1.csv'
+2025-03-08 18:56:04,851 - ERROR - Error loading data: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Processed_Data/Pores_10/Similarity/XCT-16.csv'
+2025-03-08 18:56:04,852 - ERROR - Analysis pipeline failed: [Errno 2] No such file or directory: '/Users/kanha/BAM_kgupta/radiographic_identifier/Data/Processed_Data/Pores_10/Similarity/XCT-16.csv'
+2025-03-08 18:56:21,350 - INFO - Data loaded successfully.
+2025-03-08 18:56:21,360 - INFO - Compared XCT-1 with XCT-10.csv: 1.63% similarity
+2025-03-08 18:56:21,364 - INFO - Compared XCT-1 with XCT-20.csv: 69.67% similarity
+2025-03-08 18:56:21,366 - INFO - Similarity results saved successfully.
+2025-03-08 18:56:21,366 - INFO - Similarity analysis completed successfully.
+2025-03-08 18:57:56,038 - INFO - Data loaded successfully.
+2025-03-08 18:57:56,038 - INFO - Compared XCT-20 with XCT-1.csv: 69.67% similarity
+2025-03-08 18:57:56,050 - INFO - Compared XCT-20 with XCT-10.csv: 13.45% similarity
+2025-03-08 18:57:56,052 - INFO - Similarity results saved successfully.
+2025-03-08 18:57:56,052 - INFO - Similarity analysis completed successfully.

@@ -1,0 +1,59 @@
+# General settings
+experiment_name: "gnn_experiment"
+Sample_name: "XCT-3" 
+Show_logging: true
+output_dir: "/Users/kanha/Authentication of AM samples/Graph Neural Network/Results/"
+seed: 42
+device: "cpu"  # or "cpu" or "cuda" if you don't have a GPU
+
+# Data Settings
+dataset:
+  name: "Cora"  # Dataset name (example: Cora, Citeseer, PubMed)
+  path: "./data/cora"  # Path to the dataset
+  split_ratio: 
+    train: 0.6
+    val: 0.2
+    test: 0.2
+  normalize_features: true  # Whether to normalize node features
+
+# Model Settings
+model:
+  name: "GCN"  # Model type (example: GCN, GraphSAGE, GAT)
+  hidden_units: 128  # Number of hidden units in each layer
+  num_layers: 2  # Number of layers
+  dropout: 0.5  # Dropout rate
+  activation: "relu"  # Activation function
+  batch_norm: true  # Whether to use batch normalization
+
+# Training Settings
+training:
+  batch_size: 64  # Batch size
+  epochs: 200  # Number of epochs
+  learning_rate: 0.01  # Learning rate
+  weight_decay: 5e-4  # L2 regularization (weight decay)
+  optimizer: "adam"  # Optimizer type (example: adam, sgdm)
+  scheduler:
+    name: "step_lr"  # Learning rate scheduler (e.g., "step_lr", "cosine_annealing")
+    step_size: 10  # For step_lr, step size
+    gamma: 0.5  # For step_lr, decay factor
+
+# Evaluation Settings
+evaluation:
+  metrics: 
+    - "accuracy"  # List of evaluation metrics (e.g., accuracy, F1 score)
+  early_stopping:
+    enabled: true  # Enable early stopping
+    patience: 20  # Number of epochs to wait before stopping
+  log_every_n_steps: 50  # Number of steps between logging to tensorboard
+
+# Logging and Checkpointing
+logging:
+  tensorboard: true  # Use TensorBoard for logging
+  log_interval: 100  # Steps between logging to tensorboard
+  checkpoint_frequency: 5  # Epochs between model checkpoints
+
+# Miscellaneous
+debug: false  # Set to true for debugging, which disables some optimizations
+use_wandb: true  # Whether to use Weight & Biases for experiment tracking
+wandb_project: "gnn_project"
+wandb_entity: "your_wandb_entity"  # Your W&B entity (username/team)

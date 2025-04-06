@@ -1,0 +1,14 @@
+Input_Path: ''
+Max Pores: 21
+Min Pores: 10
+Output_Path: ''
+Resolution_XCT: 10
+Sample_name: XCT-3
+Show_logging: true
+Similarity_study: true
+Sphericity: 0.7
+Steps variation: 3
+Uncertainty_window: 1
+Voxel_count: 27.0
+Z_max: 10500
+Z_min: 9500

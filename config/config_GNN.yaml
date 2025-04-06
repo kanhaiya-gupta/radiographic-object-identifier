@@ -1,0 +1,115 @@
+#######################################################################
+## This YAML configuration is for development of digital identifier
+##
+## The analysis.py has two parts:
+##                               Selection Cuts
+##                               Develop the QR code
+#######################################################################
+
+#========================================================
+# Purpose 
+# 1. Similarity Study
+# 2. Develop the Unique Identifier
+# 3. Develop the URL ID
+#========================================================
+
+Similarity_study: True         # To get the similarity vs others
+Develop_identifier: True      # QR code is generated
+Develop_URL_key: True         # To develop the URL ID
+Show_logging: True
+
+#========================================================
+# Sample Name
+# 1. XCT-1, XCT-2, ..., XCT-20
+#========================================================
+
+Sample_name: XCT-R #"Poka_Row2_03_full-part_new"    
+
+Resolution_XCT: 10                  # (µm)   
+
+#========================================================
+# Segmentation
+# 1. Apply filter
+# 2. Thresholding algorithm : OTSU, Minimum_error
+
+Apply_filter: "Non_local_means"
+
+Filter_parameter: 7
+
+Thresholding_algorithm: "OTSU"
+
+#=========================================================
+# Selection Cuts
+# -999. for no selection cut
+#=========================================================
+
+# --- How many pores you want to include ?
+
+# Max size QR can can handle is 406 entries (29C2)
+
+No_of_pores: 11       # Biggest 15 pores
+
+# --- Equivalent Spherical Diamter
+
+Equivalent_Spherical_Diameter_min: 10.     # (µm)
+Equivalent_Spherical_Diameter_max: -999.   # (µm)
+
+# --- Sphericity
+
+Sphericity: 0.7
+
+# --- Voxel Count
+
+Voxel_count: 27.
+
+# --- Distance from the centre of the sample
+
+Distance_from_centre: -999.                # (µm)
+
+Uncertainty_window: 1
+
+#=========================================================
+# List of Variables to be included in QR code 
+#=========================================================
+
+# Positions
+
+Position_X: True
+Position_Y: True
+Position_Z: True
+
+# Shape and Size
+
+Volume_of_pore_: True
+Voxel_count_: False
+Sphericity_: True
+Equivalent_Spherical_Diameter_: True
+Aspect_Ratio_: False
+
+# Distribution of distances
+
+No_of_bins: 20
+
+#==========================================================
+# additional studies
+#==========================================================
+
+do_Variables_plot: True
+
+#==========================================================
+# Paths
+#=========================================================
+
+# Input Data 
+# Data after Selection cuts
+# Data with required variables
+
+Input_Path: "/Users/kanha/BAM_kgupta/radiographic_identifier/Data/"  
+
+# Images inclues the QR Code and the histograms 
+# of the Variables
+
+Output_Path: "/Users/kanha/Authentication of AM samples/Graph Neural Network/Output/"
+
+
+#######################################################################

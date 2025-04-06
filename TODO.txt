@@ -1,0 +1,12 @@
+            Title                                                    Status
+
+1. Make the QR code of required variables only                     Complete
+
+2. Do the broken test                                              Not complete
+
+3. Do the uniquness test                                           Not complete
+
+4. Do the XCT indepent test                                        Not complete
+
+5. Send a warning when pores are less                              Not complete
+

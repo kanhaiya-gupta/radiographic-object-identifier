@@ -1,0 +1,123 @@
+#######################################################################
+## This YAML configuration is for development of digital identifier
+##
+## The registration module defines translation of X, Y, Z
+## The analysis.py has two parts:
+##                               Selection Cuts
+##                               Develop the QR code
+#######################################################################
+
+#========================================================
+# Sample Name
+# 1. QID_Block_02-02 , 2. QID_block_02-02_broken
+# 3. QID_Block_02-07 , 4. QID_Block_02-07_broken
+# 5. QID_Block_02-15 , 6. QID_Block_02-15_broken
+#========================================================
+
+Sample_name: "DPK003B"   
+
+Original_sample: False
+
+Resolution_XCT: 10.                  # (µm)   
+
+#=======================================================
+# Geometry of sample
+# Nomenclature: Cylinder : R, Cube: L
+# Cuboid: LB, Pyramid: T, Others: OT
+#========================================================
+
+Cylinder: False
+Cube: False
+Cuboid: False
+Pyramid: False
+Others: False
+
+#=========================================================
+# Selection Cuts
+# -999. for no selection cut
+#=========================================================
+
+# --- How many pores you want to include ?
+
+# ---- (a)   QR code
+# Max size QR can can handle is 406 entries (29C2)
+
+No_of_pores: 29       # Biggest 15 pores
+
+# ---- (b)   Referece
+
+No_of_pores_R: -999.       # Store more pores information for Main sample
+
+# --- Equivalent Spherical Diamter
+
+Equivalent_Spherical_Diameter_min: 10.     # (µm)
+Equivalent_Spherical_Diameter_max: -999.   # (µm)
+
+# --- Sphericity
+
+Sphericity: 0.9
+
+# --- Voxel Count
+
+Voxel_count: 5
+
+# --- Distance from the centre of the sample
+
+Distance_from_centre: -999.                # (µm)
+
+#=========================================================
+# List of Variables to be included in QR code 
+#=========================================================
+
+# Positions
+
+Position_X: True
+Position_Y: True
+Position_Z: True
+
+# Shape and Size
+
+Volume_of_pore: True
+Voxel_count: False
+Sphericity: True
+Equivalent_Spherical_Diameter: True
+Aspect_Ratio: False
+
+# Distribution of distances
+
+No_of_bins: 20
+
+#=========================================================
+# Uniqueness Test
+#==========================================================
+
+do_Uniqueness_Test: True
+Uncertainty_window: 2
+
+#==========================================================
+# additional studies
+#==========================================================
+
+do_Variables_plot: False
+
+#==========================================================
+# Paths
+#=========================================================
+
+# Data includes STL file from XCT
+# Segmented data, Translated position
+# Data after Selection cuts
+# Data with required variables
+
+Segmented_Data_Path: "../Data/Segmented_Data/Porosity/"
+STL_Data_Path: "../Data/Segmented_Data/STL/"
+Processed_Data_path: "../Data/Processed_Data/"  
+
+# Images inclues the QR Code and the histograms 
+# of the Variables
+
+Images_QR-codes: "../Output/Images/QR-codes/"
+Output_CSV: "../Output/CSV_data/"
+Images_Variables: "../Output/Images/Reconstruction/"
+
+#######################################################################
